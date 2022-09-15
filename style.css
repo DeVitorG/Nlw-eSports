@@ -104,10 +104,14 @@ section ul li:hover{
     border: 1px solid #443e54
 }
 
+.change-my-color {
+    fill: white;
+  }
+
 /* animation */
 
 header div{
-    animation: fromTop .7s .2s backwards;
+    animation: fromLeft .7s .2s backwards;
 }
 
 main section{
@@ -126,14 +130,14 @@ main section:nth-child(3){
     animation-delay: .8s;
 }
 
-@keyframes fromTop{
+@keyframes fromLeft{
     from{
         opacity: 0;
-        transform: translateY(-30px);
+        transform: translateX(30px);
     }
 
     to{
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
